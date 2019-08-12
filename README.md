@@ -1,5 +1,32 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Currently house 4 sameples:
+
+- Classes components Vs Functional components. needs the following
+    App4ClassVsFunctional from './App4ClassvsFunctional';
+        Users from './ClassVsFunctional Components/users/users'
+        import User from './user';
+
+
+- react-redux example, this was using TechSith tutorial, dependencies : 
+    App4Redux from './reduxStyle/App4Redux';
+    {Provider} from 'react-redux' 
+    {createStore} from 'redux'
+    reducer from './reduxStyle/store/reducer'
+    const store = createStore (reducer);
+    <Provider store={store}><App4Redux /></Provider>
+
+
+- Blog Sample, think this was Section 9 in Max tutorials (this is incomplete as we still need to set up the new post)
+    AppBlog from './AppBlog';
+        Blog from './containers/Blog/Blog';
+        Post from '../../components/Post/Post';
+        FullPost from '../../components/FullPost/FullPost';
+        NewPost from '../../components/NewPost/NewPost';
+        Axios from 'axios';
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

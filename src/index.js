@@ -11,8 +11,8 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 
-import App from './AppBlog';
-ReactDOM.render( <App />, document.getElementById( 'root' ) );
+import AppBlog from './AppBlog';
+ReactDOM.render( <AppBlog />, document.getElementById( 'root' ) );
 
 
 
