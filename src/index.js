@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 // If you want your app to work offline and load faster, you can change: serviceWorker.unregister();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
@@ -11,8 +13,8 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 
-import AppBlog from './AppBlog';
-ReactDOM.render( <AppBlog />, document.getElementById( 'root' ) );
+// import AppBlog from './AppBlog';
+// ReactDOM.render( <AppBlog />, document.getElementById( 'root' ) );
 
 
 
@@ -36,7 +38,8 @@ ReactDOM.render( <AppBlog />, document.getElementById( 'root' ) );
 // ReactDOM.render( <Provider store={store}><App4Redux /></Provider>, document.getElementById( 'root' ) );
 
 
-
+import MakeUp from "./EsteeLauder/esteelauder";
+ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
