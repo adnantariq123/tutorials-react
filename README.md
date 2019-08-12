@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Currently house **4 sameples**:
 
 - **Classes components Vs Functional components**. needs the following
-    -App4ClassVsFunctional from './App4ClassvsFunctional';
+    - App4ClassVsFunctional from './App4ClassvsFunctional';
        - Users from './ClassVsFunctional Components/users/users'
        - import User from './user';
 
