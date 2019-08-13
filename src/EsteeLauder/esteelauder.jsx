@@ -9,7 +9,7 @@ import Home from "./Home";
 
 class App extends Component {
     state = {  
-        MakeUp: filterData("", 2)
+        MakeUp: filterData("", 20)
     }
 
     handleSearchChange(e) {
@@ -19,7 +19,7 @@ class App extends Component {
         console.log("event is :" + e);
     };
 
-
+ 
 
     render() { 
         return (

@@ -1,8 +1,7 @@
 import Data from './data';
 
 export default function filterData(searchText, getList) {
-  return Data
-    .filter(xyz => {
+  return Data.filter(xyz => {
       if (xyz.name.toLowerCase().includes(searchText.toLowerCase())) {
         return true;
       }

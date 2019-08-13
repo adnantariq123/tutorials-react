@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "./menu.css";
+
 class Menu extends Component {
 
     state = {
@@ -10,7 +12,7 @@ class Menu extends Component {
 
     showSearchContainer(e) {
         e.preventDefault();
-        //console.log(AllData);
+        // this state change simply shows or hides the search input field, kinda like your display: hiden/block but throught memory
         this.setState({
             showingSearch: !this.state.showingSearch
         });
@@ -23,7 +25,7 @@ class Menu extends Component {
             inputValue: e.target.value
           }, () => {
             this.props.textChange(this.state.inputValue);
-            console.log(this.state.inputValue);
+            //console.log(this.state.inputValue);
           });
     };
     
@@ -34,18 +36,19 @@ class Menu extends Component {
 
             
             <nav className="navbar navbar-dark bg-dark text-white">
-                <a className="navbar-brand">Navbar</a>
-                <a className="nav-item">HOLIDAY</a>
-                <a className="nav-item">WHAT'S NEW</a>
+                <button className="navbar-brand">Navbar</button>
+                <button className="nav-item">HOLIDAY</button>
+                <button className="nav-item">WHAT'S NEW</button>
 
-                <a onClick={(e) => this.showSearchContainer(e)}>
+                <button onClick={(e) => this.showSearchContainer(e)}>
                     <i className="material-icons search">search</i>
-                </a>
+                </button>
             </nav>
 
             <div className={(this.state.showingSearch ? "showing " : "") + "search-container"}>
             <input type="text" id="myInput" onChange={(e) => this.onSearch(e)} />
-            <a href="#" onClick={(e) => this.showSearchContainer(e)}>
+            {/* a tag is missing the href so it looks wired... not the end of the world */}
+            <a onClick={(e) => this.showSearchContainer(e)}>
                 <i className="material-icons close">close</i>
             </a>
             </div>
