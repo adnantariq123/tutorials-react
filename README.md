@@ -25,6 +25,12 @@ Currently house **4 sameples**:
         - NewPost from '../../components/NewPost/NewPost';
         - Axios from 'axios';
 
+- **Make up Search example**, 
+    - MakeUp from "./EsteeLauder/esteelauder";
+        -filterData from "./filterData"; the code with all that magic
+        -Menu from "./Menu";
+        -Home from "./Home";
+            -Box from "./Box";
 
 
 ## Available Scripts
