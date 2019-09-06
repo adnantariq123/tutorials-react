@@ -5,6 +5,8 @@ import registerServiceWorker from './registerServiceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
+
+
 // If you want your app to work offline and load faster, you can change: serviceWorker.unregister();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
@@ -49,6 +51,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 // import HAS to be with a capital letter
 import Legend from './legend/legend';
-ReactDOM.render(<Legend/>, document.getElementById('root'));
+import {Provider} from "react-redux";
+import {createStore} from "redux";
+import reducer from "./legend/states/allThatStuff";
+
+const store = createStore (reducer);
+
+ReactDOM.render(<Provider store={store}><Legend/></Provider>, document.getElementById('root'));
 
 registerServiceWorker();
