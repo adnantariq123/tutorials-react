@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Currently house **4 sameples**:
+Currently house **5 sameples**:
 
 - **Classes components Vs Functional components**. needs the following
     - App4ClassVsFunctional from './App4ClassvsFunctional';
@@ -8,7 +8,7 @@ Currently house **4 sameples**:
        - import User from './user';
 
 
-- **react-redux example**, this was using TechSith tutorial, dependencies : 
+- **react-redux example**, this was using TechSith tutorial, dependencies : he is using a store, and provider etc.. IMPORTANT
     - App4Redux from './reduxStyle/App4Redux';
     - {Provider} from 'react-redux' 
     - {createStore} from 'redux'
@@ -31,6 +31,10 @@ Currently house **4 sameples**:
         -Menu from "./Menu";
         -Home from "./Home";
             -Box from "./Box";
+
+- **Kyle approach to Pokemon**,
+    - using Axios to load data
+    - import Pokemon from './Pokemon/PokemonApp';       
 
 
 ## Available Scripts

@@ -44,9 +44,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 
-import Pokemon from './Pokemon/PokemonApp';
-ReactDOM.render(<Pokemon/>, document.getElementById('root'));
+// import Pokemon from './Pokemon/PokemonApp';
+// ReactDOM.render(<Pokemon/>, document.getElementById('root'));
 
-
+// import HAS to be with a capital letter
+import Legend from './legend/legend';
+ReactDOM.render(<Legend/>, document.getElementById('root'));
 
 registerServiceWorker();
