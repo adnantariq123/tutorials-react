@@ -29,6 +29,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 // import App4Redux from './reduxStyle/App4Redux';
+// // this following 'react-redux' needs to be inside inside a component called Provider or else it will throw an error
 // import {Provider} from 'react-redux';
 // import {createStore} from 'redux';
 // import reducer from './reduxStyle/store/reducer';
@@ -38,13 +39,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 // ReactDOM.render( <Provider store={store}><App4Redux /></Provider>, document.getElementById( 'root' ) );
 
 
-import MakeUp from "./EsteeLauder/esteelauder";
-ReactDOM.render(<MakeUp/>, document.getElementById('root'));
+// import MakeUp from "./EsteeLauder/esteelauder";
+// ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
-
-
+import Pokemon from './Pokemon/PokemonApp';
+ReactDOM.render(<Pokemon/>, document.getElementById('root'));
 
 
 
