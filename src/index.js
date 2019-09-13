@@ -36,9 +36,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import {createStore} from 'redux';
 // import reducer from './reduxStyle/store/reducer';
 
+
+
 // const store = createStore (reducer);
 // ReactDOM.render( <h1>Sample of react, along with redux 'store'</h1>, document.getElementById( 'headed' ) );
 // ReactDOM.render( <Provider store={store}><App4Redux /></Provider>, document.getElementById( 'root' ) );
+
 
 
 // import MakeUp from "./EsteeLauder/esteelauder";
@@ -46,17 +49,43 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 
+
 // import Pokemon from './Pokemon/PokemonApp';
 // ReactDOM.render(<Pokemon/>, document.getElementById('root'));
 
+
+
+
+
 // import HAS to be with a capital letter
-import Legend from './legend/legend';
-import {Provider} from "react-redux";
-import {createStore} from "redux";
-import reducer from "./legend/states/allThatStuff";
+// import Legend from './legend/legend';
+// import {Provider} from "react-redux";
+// import {createStore} from "redux";
+// import reducer from "./legend/states/allThatStuff";
 
-const store = createStore (reducer);
+// const store = createStore (reducer);
 
-ReactDOM.render(<Provider store={store}><Legend/></Provider>, document.getElementById('root'));
+// ReactDOM.render(<Provider store={store}><Legend/></Provider>, document.getElementById('root'));
+
+
+
+
+
+
+//another Redux example from utube ^_^
+// this of reducer as here you actually define states
+import allReducer from './React-ReduxII/lovelyTutorial';
+
+// syntatical bullshit to attach stuff
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+
+// i r easy components
+import WhatTest from './React-ReduxII/wut';
+
+const store = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+
+ReactDOM.render(<Provider store={store}><WhatTest/></Provider>, document.getElementById('root'));
 
 registerServiceWorker();
