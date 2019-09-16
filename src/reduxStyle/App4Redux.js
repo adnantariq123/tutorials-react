@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import '../App.css';
 
+//The connect() function connects a React component to a Redux store
+//https://react-redux.js.org/api/connect
 import {connect} from 'react-redux';
 
 
 class App extends Component {
 
-
+// ALL this state manuplation is NOW done in the reducer file.
 //   state = {
 //     age:21
 //   }
@@ -50,5 +52,11 @@ const mapDispachToProps = (dispach) => {
     onAgeDown: () => dispach({type:'Age_DOWN'})
   }
 }
+
+
+// so the mapStateToProps, mapDispatchToProps :-If a mapStateToProps function 
+
+//is specified, the new wrapper component will subscribe to Redux store updates.
+//This means that any time the store is updated mapStateToProps will be called.
 
 export default connect(mapStateToProps, mapDispachToProps) (App);

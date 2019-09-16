@@ -31,11 +31,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 // import App4Redux from './reduxStyle/App4Redux';
-// // this following 'react-redux' needs to be inside inside a component called Provider or else it will throw an error
+
+
+// the provider 'attaches' the root component to the 'store'. The store is attached to your logic, or your memory, your STATE
 // import {Provider} from 'react-redux';
 // import {createStore} from 'redux';
 // import reducer from './reduxStyle/store/reducer';
-
 
 
 // const store = createStore (reducer);
@@ -83,9 +84,9 @@ import {Provider} from 'react-redux';
 // i r easy components
 import WhatTest from './React-ReduxII/wut';
 
-const store = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const pig = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
-ReactDOM.render(<Provider store={store}><WhatTest/></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={pig}><WhatTest/></Provider>, document.getElementById('root'));
 
 registerServiceWorker();

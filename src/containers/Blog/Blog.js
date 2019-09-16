@@ -8,6 +8,7 @@ import Axios from 'axios';
 
 class Blog extends Component {
     state = {
+        // innitially we have the state 'post' as empty.. it is AFTER componentDidMount we make a function and then populate the state below
         posts: [],
         selectedPostID:null
     }
