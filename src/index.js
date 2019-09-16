@@ -73,8 +73,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 //another Redux example from utube ^_^
-// this of reducer as here you actually define states
-import allReducer from './React-ReduxII/lovelyTutorial';
+// this reducer as here you actually define states
+import allReducer from './React-ReduxII/allReducers';
 
 // syntatical bullshit to attach stuff
 import {createStore} from 'redux';
