@@ -89,4 +89,8 @@ const pig = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && windo
 
 ReactDOM.render(<Provider store={pig}><WhatTest/></Provider>, document.getElementById('root'));
 
+
+// import LifeCycle from './LifeCycleHooks/LifeCycleHooks';
+// ReactDOM.render(<LifeCycle/>, document.getElementById('root'));
+
 registerServiceWorker();
