@@ -43,10 +43,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 // ReactDOM.render( <h1>Sample of react, along with redux 'store'</h1>, document.getElementById( 'headed' ) );
 // ReactDOM.render( <Provider store={store}><App4Redux /></Provider>, document.getElementById( 'root' ) );
 
+ 
 
-
-// import MakeUp from "./EsteeLauder/esteelauder";
-// ReactDOM.render(<MakeUp/>, document.getElementById('root'));
+import MakeUp from "./EsteeLauder/esteelauder";
+ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
@@ -75,19 +75,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 //another Redux example from utube ^_^
 // this reducer as here you actually define states
-import allReducer from './React-ReduxII/allReducers';
+// import allReducer from './React-ReduxII/allReducers';
 
 // syntatical bullshit to attach stuff
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
+// import {createStore} from 'redux';
+// import {Provider} from 'react-redux';
 
 // i r easy components
-import WhatTest from './React-ReduxII/wut';
+// import WhatTest from './React-ReduxII/wut';
 
-const pig = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+// const pig = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
-ReactDOM.render(<Provider store={pig}><WhatTest/></Provider>, document.getElementById('root'));
+// ReactDOM.render(<Provider store={pig}><WhatTest/></Provider>, document.getElementById('root'));
 
 
 // import LifeCycle from './LifeCycleHooks/LifeCycleHooks';
