@@ -62,7 +62,9 @@ class Menu extends Component {
                 <input type="text" id="myInput" onChange={(e) => this.onSearch(e)} />
                 {/* a tag is missing the href so it looks wired... not the end of the world */}
                 <a onClick={(e) => this.showSearchContainer(e)}>
-                    <i className="material-icons close">close</i>
+                    {/* <i className="material-icons close">close</i>  having fun*/}
+
+                    <i className="material-icons close" style={{color:"red"}}>close</i>
                 </a>
                 </div>
 

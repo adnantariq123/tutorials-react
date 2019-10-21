@@ -33,7 +33,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import App4Redux from './reduxStyle/App4Redux';
 
 
-// the provider 'attaches' the root component to the 'store'. The store is attached to your logic, or your memory, your STATE
+// // the provider 'attaches' the root component to the 'store'. The store is attached to your logic, or your memory, your STATE
 // import {Provider} from 'react-redux';
 // import {createStore} from 'redux';
 // import reducer from './reduxStyle/store/reducer';
@@ -45,8 +45,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
  
 
-import MakeUp from "./EsteeLauder/esteelauder";
-ReactDOM.render(<MakeUp/>, document.getElementById('root'));
+// import MakeUp from "./EsteeLauder/esteelauder";
+// ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
@@ -58,7 +58,7 @@ ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
-// import HAS to be with a capital letter
+//import HAS to be with a capital letter
 // import Legend from './legend/legend';
 // import {Provider} from "react-redux";
 // import {createStore} from "redux";
@@ -77,17 +77,17 @@ ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 // this reducer as here you actually define states
 // import allReducer from './React-ReduxII/allReducers';
 
-// syntatical bullshit to attach stuff
+// // syntatical bullshit to attach stuff
 // import {createStore} from 'redux';
 // import {Provider} from 'react-redux';
 
-// i r easy components
+// // i r easy components
 // import WhatTest from './React-ReduxII/wut';
 
-// const pig = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+// const store = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
-// ReactDOM.render(<Provider store={pig}><WhatTest/></Provider>, document.getElementById('root'));
+// ReactDOM.render(<Provider store={store}><WhatTest/></Provider>, document.getElementById('root'));
 
 
 // import LifeCycle from './LifeCycleHooks/LifeCycleHooks';
