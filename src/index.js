@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -88,6 +89,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 // ReactDOM.render(<Provider store={store}><WhatTest/></Provider>, document.getElementById('root'));
+
+
+import SampleRouter from './ReactROUTERs/app';
+ReactDOM.render(<SampleRouter></SampleRouter>, document.getElementById("root"));
+
+
+
+
+
+
+
+
+
 
 
 // import LifeCycle from './LifeCycleHooks/LifeCycleHooks';
