@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "./nav";
 import About from "./about";
 import Shop from "./shop";
+import AnotherComponent from "./anotherComponent";
 
 import "./style.css";
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' exact component={Home}/>
             <Route path='/about' component={About}/>
             <Route path='/shop' component={Shop}/>
+            <Route path='/another' component={AnotherComponent}/>
         </Switch>
       </div>
     </BrowserRouter>

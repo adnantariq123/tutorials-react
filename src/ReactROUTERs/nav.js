@@ -15,7 +15,10 @@ function Nav() {
         <Link to='/shop'>
           <li>Shop</li>
         </Link>
-        
+
+        <Link to='/another'>
+          <li>another compontent</li>
+        </Link>
       </ul>
     </div>
   );
