@@ -46,8 +46,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
  
 
-// import MakeUp from "./EsteeLauder/esteelauder";
-// ReactDOM.render(<MakeUp/>, document.getElementById('root'));
+import MakeUp from "./EsteeLauder/esteelauder";
+ReactDOM.render(<MakeUp/>, document.getElementById('root'));
 
 
 
@@ -91,8 +91,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 // ReactDOM.render(<Provider store={store}><WhatTest/></Provider>, document.getElementById('root'));
 
 
-import SampleRouter from './ReactROUTERs/app';
-ReactDOM.render(<SampleRouter></SampleRouter>, document.getElementById("root"));
+// import SampleRouter from './ReactROUTERs/app';
+// ReactDOM.render(<SampleRouter></SampleRouter>, document.getElementById("root"));
 
 
 
